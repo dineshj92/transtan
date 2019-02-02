@@ -1,0 +1,446 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f1f5f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/title_donorRegistration"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_profile_picture" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageLayout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_fullName"
+            android:includeFontPadding="true"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <EditText
+            android:id="@+id/useraddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_address"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <EditText
+            android:id="@+id/userdob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/useraddress"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:focusable="false"
+            android:hint="@string/hint_dob"
+            android:onClick="showDatePickerDialog"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <Spinner
+            android:id="@+id/usergender"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userdob"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:entries="@array/gender"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <Spinner
+            android:id="@+id/userBloodGroup"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usergender"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:entries="@array/bloodGroup"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <CheckBox
+            android:id="@+id/organs1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userBloodGroup"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="All Organs" />
+
+        <CheckBox
+            android:id="@+id/organs2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/organs1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Corneas(Eye)" />
+
+        <CheckBox
+            android:id="@+id/organs3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/organs2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Liver" />
+
+        <CheckBox
+            android:id="@+id/organs4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/organs3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Heart" />
+
+        <CheckBox
+            android:id="@+id/organs5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/organs4"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Lungs" />
+
+        <CheckBox
+            android:id="@+id/organs6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/organs5"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Skin" />
+
+        <CheckBox
+            android:id="@+id/organs7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/organs6"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Pancreas" />
+
+        <CheckBox
+            android:id="@+id/organs8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/organs7"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:text="Whole Body" />
+
+        <CheckBox
+            android:id="@+id/organs10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/organs8"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Kidney" />
+
+        <CheckBox
+            android:id="@+id/organs9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/organs10"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Other" />
+
+        <EditText
+            android:id="@+id/userIds"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/organs9"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_ids"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <TextView
+            android:id="@+id/warningUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userIds"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/text_warning_inputId"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorInputWarning"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/userEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warningUserId"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <TextView
+            android:id="@+id/warningUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userEmail"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/text_warning_inputEmail"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorInputWarning"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/userMobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warningUserEmail"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_mobile"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <TextView
+            android:id="@+id/warningUserMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userMobile"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/text_warning_inputMobile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorInputWarning"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/userDistrict"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warningUserMobile"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:entries="@array/district"
+            android:padding="10dp"
+            android:prompt="@string/hint_district"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <TextView
+            android:id="@+id/titleEmergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDistrict"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/title_emergency"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emergencyName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleEmergency"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_emergencyName"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <EditText
+            android:id="@+id/emergencyAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyName"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_emergencyaddress"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <EditText
+            android:id="@+id/emergencyMobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyAddress"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_emergencymobile"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <TextView
+            android:id="@+id/warningEmergencyMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyMobile"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/text_warning_inputMobile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorInputWarning"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/titleEmergency2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warningEmergencyMobile"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/title_emergency"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emergencyName2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleEmergency2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_emergencyName"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <EditText
+            android:id="@+id/emergencyAddress2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyName2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_emergencyaddress"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <EditText
+            android:id="@+id/emergencyMobile2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyAddress2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_emergencymobile"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <TextView
+            android:id="@+id/warningEmergencyMobile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyMobile2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/text_warning_inputMobile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorInputWarning"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warningEmergencyMobile2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshapegreen"
+            android:text="@string/btn_submit"
+            android:textAlignment="center"
+            android:textColor="@color/colorInputBackground" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

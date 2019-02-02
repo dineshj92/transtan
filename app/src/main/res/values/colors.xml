@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">	#16A79B</color>
+    <color name="colorPrimaryDark">#16A79F</color>
+    <color name="colorAccent">#16A79F</color>
+    <color name="colorMainBackground">#f7f7f7</color>
+    <color name="colorTextColor">#000000</color>
+    <color name="colorHint">#c8c6c6</color>
+    <color name="colorInputBackground">#ffffff</color>
+    <color name="colorInputWarning">@android:color/holo_red_dark</color>
+
+</resources>

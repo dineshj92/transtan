@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_home_landscape"
+    android:gravity="center|bottom"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-5dp"
+            android:background="@drawable/buttonshapegreen"
+            android:text="@string/getStarted"
+            android:drawableRight="@drawable/ic_navigate_next_white_18dp"
+            android:drawablePadding="-20dp"
+            android:textColor="@color/colorInputBackground" />
+
+
+</LinearLayout>

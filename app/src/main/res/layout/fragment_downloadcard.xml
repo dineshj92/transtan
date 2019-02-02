@@ -1,0 +1,119 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleDownloadDonor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/title_downloadcard"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorPrimary"/>
+
+        <ImageView
+            android:id="@+id/img_donorLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_app_logo" />
+
+        <TextView
+            android:id="@+id/subtitledDownloadDonor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/subtitle_download"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hintDownloadDonor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/downloadhint_heading"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/downloadUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_mobile"
+            android:padding="10dp"
+            android:includeFontPadding="true"
+            android:inputType="phone"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <TextView
+            android:id="@+id/warningUserMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/text_warning_inputMobile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorInputWarning"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/downloadPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputboxshapegray"
+            android:hint="@string/hint_dob"
+            android:focusable="false"
+            android:onClick="showDatePickerDialog"
+            android:padding="10dp"
+            android:textColor="@color/colorTextColor"
+            android:textColorHint="@color/colorHint" />
+
+        <TextView
+            android:id="@+id/warningUserDob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/text_warning_inputDob"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorInputWarning"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshapegreen"
+            android:layout_gravity="center"
+            android:text="@string/btn_download"
+            android:textAlignment="center"
+            android:textColor="@color/colorInputBackground"
+            android:layout_marginBottom="200dp" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

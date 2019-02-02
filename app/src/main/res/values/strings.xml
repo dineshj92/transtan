@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Transtan</string>
+    <string name="getStarted">GET STARTED</string>
+    <string name="title_home">Home</string>
+    <string name="title_aboutus">About Transtan</string>
+    <string name="title_downloadcard">Donor Card</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_emergency">Details of the person to be contacted in an emergency</string>
+
+    <string name="subtitle_aboutUs">Transplant Authority Of Tamil Nadu</string>
+    <string name="subtitle_download">Download your donor card</string>
+    <string name="mandatory_heading">*All the fields are mandatory</string>
+    <string name="downloadhint_heading">Enter the registered mobile number and date of birth to download the Donor Card</string>
+
+    <string name="text_warning_inputId">Enter valid 12 digit Aadhaar ID</string>
+    <string name="text_warning_inputEmail">Enter valid Email ID</string>
+    <string name="text_warning_inputMobile">Enter valid Mobile Number</string>
+    <string name="text_warning_inputDob">Enter valid Date of Birth in dd.mm.yyyy format</string>
+
+    <string name="content_aboutUs">Transplant Authority of Tamil Nadu, a registered society, was formed by G.O.396 dated 12.12.2014 under the Chairmanship of the Honorable Chief Minister of Tamil Nadu. The General Body consists of 21 members including the Hon’ble Minister for Health and Family Welfare and Hon’ble Minister of Finance. Transtan’s entire functions are overseen by an Executive Committee which includes the Principal Secretary to Government of Tamil Nadu, Health  Family Welfare Dept.\n</string>
+    <string name="contact_email">organstransplant@gmail.com</string>
+    <string name="contact_phone">+(91) 44-25333676</string>
+    <string name="web_portal">https://transtan.tn.gov.in/</string>
+
+    <string name="title_donorRegistration">Donor Registration</string>
+    <string name="hint_fullName">Full Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_dob">Date Of Birth</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_bloodGroup">Blood Group</string>
+    <string name="hint_ids">ID No(Aadhaar card)</string>
+    <string name="hint_email">Email ID</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_district">District</string>
+    <string name="hint_emergencyName">Name</string>
+    <string name="hint_emergencyaddress">Address</string>
+    <string name="hint_emergencymobile">Mobile Number</string>
+
+    <string name="btn_submit">Submit</string>
+    <string name="btn_download">Download</string>
+    <string name="btn_ok">OK</string>
+
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="bloodGroup">
+        <item>Blood Group</item>
+        <item>A RhD positive (A+)</item>
+        <item>A RhD negative (A-)</item>
+        <item>B RhD positive (B+)</item>
+        <item>B RhD negative (B-)</item>
+        <item>O RhD positive (O+)</item>
+        <item>O RhD negative (O-)</item>
+        <item>AB RhD positive (AB+)</item>
+        <item>AB RhD negative (AB-)</item>
+    </string-array>
+
+    <string-array name="organsList">
+        <item>All Organs</item>
+        <item>Corneas(Eye)</item>
+        <item>Heart</item>
+        <item>Liver</item>
+        <item>Lungs</item>
+        <item>Skin</item>
+        <item>Pancreas</item>
+        <item>Whole Body</item>
+        <item>Kidney</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="district">
+        <item>District</item>
+        <item>Ariyalur</item>
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+        <item>Cuddalore</item>
+        <item>Dharmapuri</item>
+        <item>Dindigul</item>
+        <item>Erode</item>
+        <item>Kancheepuram</item>
+        <item>Karur</item>
+        <item>Krishnagiri</item>
+        <item>Madurai</item>
+        <item>Nagapattinam</item>
+        <item>Kanyakumari</item>
+        <item>Namakkal</item>
+        <item>Perambalur</item>
+        <item>Pudukottai</item>
+        <item>Ramanathapuram</item>
+        <item>Salem</item>
+        <item>Sivagangai</item>
+        <item>Thanjavur</item>
+        <item>Theni</item>
+        <item>Thiruvallur</item>
+        <item>Thiruvarur</item>
+        <item>Thoothukudi</item>
+        <item>Trichirappalli</item>
+        <item>Thirunelveli</item>
+        <item>Tiruppur</item>
+        <item>Thiruvannamalai</item>
+        <item>TheNilgiris</item>
+        <item>Vellore</item>
+        <item>Villupuram</item>
+        <item>Virudhunagar</item>
+    </string-array>
+
+
+</resources>
